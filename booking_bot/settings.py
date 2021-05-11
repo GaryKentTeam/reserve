@@ -88,12 +88,8 @@ WSGI_APPLICATION = 'booking_bot.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresq1',
-        'NAME': 'dep3rufhcv37li',
-        'USER' : 'bmxcyzdwelsgkk',
-        'PASSWORD' : '879ac7dd50a7198390c732924df2d4a50229b49fcaa8fb4f729e3979ae76c539',
-        'HOST' : 'ec2-52-87-107-83.compute-1.amazonaws.com',
-        'PORT' : '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
